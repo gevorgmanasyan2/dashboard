@@ -1,0 +1,6 @@
+{
+    "REACT_APP_URL" : "http://localhost:3000/login",
+    "REACT_APP_AUTH_URL" : "https://authentication-dev.irisonboard.com",
+    "REACT_APP_API_URL" : "https://dms-dev.irisonboard.com",
+    "REACT_APP_TOKEN_TIMEOUT" : 1860
+}

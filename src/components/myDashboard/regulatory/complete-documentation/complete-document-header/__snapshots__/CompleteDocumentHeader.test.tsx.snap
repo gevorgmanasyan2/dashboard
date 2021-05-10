@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CompleteDocumentHeader component 1`] = `
+<button
+  className="doc__container"
+>
+  <div
+    className="doc__container__date"
+    style={
+      Object {
+        "background": "\\"#26A744\\"",
+      }
+    }
+  >
+    <span>
+      Completed Date
+      : 
+      2020-07-10
+    </span>
+  </div>
+  <div
+    className="doc__container__content"
+    style={
+      Object {
+        "color": "\\"#26A744\\"",
+      }
+    }
+  >
+    <ForwardRef(CheckCircleFilled) />
+    <span />
+  </div>
+</button>
+`;

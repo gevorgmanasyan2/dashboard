@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Title component 1`] = `
+<Title
+  className="main-title header__title"
+>
+  title
+</Title>
+`;

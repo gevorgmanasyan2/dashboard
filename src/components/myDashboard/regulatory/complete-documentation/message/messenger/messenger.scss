@@ -1,0 +1,27 @@
+@import '../../../../../../styles/variables';
+
+.messenger__container {
+  &__form {
+    display: grid;
+    gap: 3rem;
+
+    &__buttons {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: end;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .messenger__container {
+    &__form {
+      &__buttons {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+

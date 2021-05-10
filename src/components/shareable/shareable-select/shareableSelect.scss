@@ -1,0 +1,7 @@
+@import '../../../styles/variables.scss';
+.shareableSelect__container {
+  display: grid;
+  &--select {
+    border: 1px solid $primaryGrey;
+  }
+}

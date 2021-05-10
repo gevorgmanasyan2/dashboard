@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CasiaDevicesPopup component 1`] = `
+<div
+  className="casiadevices__container"
+>
+  <Popup
+    cancelButtonText="Come back later"
+    className="casiadevices__container__modal"
+    closeModal={[Function]}
+    modalTitle="Your New Casia device"
+    okButtonText={
+      <Link
+        onClick={[Function]}
+        to="/casiadevice"
+      >
+        Let's Go!
+      </Link>
+    }
+    visible={true}
+  >
+    <p
+      className="casiadevices__container__modal--info"
+    >
+      Our records show that you have a Casia Device that has not yet been configured
+    </p>
+    <p
+      className="casiadevices__container__modal--offer"
+    >
+      Would you like to get started now?(takes about 1 hour)
+    </p>
+  </Popup>
+</div>
+`;

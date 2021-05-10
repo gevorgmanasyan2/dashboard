@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Regulatory component 1`] = `
+<aside
+  className="rightBar__container"
+>
+  <RightBarItem
+    title="Open Document Requests"
+  >
+    <div
+      className="rightBar__container__item__uploads"
+    >
+      <div
+        className="rightBar__container__item__uploads__icons"
+      >
+        <span
+          className="rightBar__container__item__uploads__icons--info"
+        />
+      </div>
+      <span
+        className="rightBar__container__item__uploads__viewAll"
+      >
+        View all
+      </span>
+    </div>
+  </RightBarItem>
+  <RightBarItem
+    title="Recent Changes"
+  >
+    <div
+      className="rightBar__container__item__details"
+    >
+      <div
+        className="rightBar__container__item__details__info"
+      >
+        <p>
+          Questionnaire FFAConcept of Operations status changed questionnaire FFAConcept of Operations status changed
+        </p>
+        <span>
+          Jason, 2020-08-15
+        </span>
+      </div>
+      <div
+        className="rightBar__container__item__details__info"
+      >
+        <p>
+          Questionnaire FFAConcept of Operations status changed questionnaire FFAConcept of Operations status changed
+        </p>
+        <span>
+          Jason, 2020-08-15
+        </span>
+      </div>
+      <p>
+        Agent Trever Linn assigned to waiver
+      </p>
+      <div
+        className="rightBar__container__item__details__link"
+      >
+        <span
+          className="rightBar__container__item__details__link--info"
+        >
+          View all
+        </span>
+      </div>
+    </div>
+  </RightBarItem>
+  <HistoryPopup />
+</aside>
+`;

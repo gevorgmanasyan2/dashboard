@@ -1,0 +1,111 @@
+@import "../../../../../../styles/variables";
+
+.rightBar__item {
+  border: 1px solid #DADADA;
+  margin-bottom: 2rem;
+
+  &__header {
+    background: $lighterGrey;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+
+    h3 {
+      margin: 0 !important;
+    }
+
+  }
+
+  &__sailScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  &__sailScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  &__details{
+    padding: 2rem 2rem 0 2rem;
+    >p{
+      font-size: 2rem;
+      color: $primaryGrey;
+    }
+  }
+
+  &__uploads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    > p {
+      padding: 0 2rem;
+      font-size: 1.8rem;
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem 0;
+      width: 90%;
+
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+          font-size: 1.6rem;
+          margin-top: .5rem;
+        }
+      }
+
+      .anticon {
+        font-size: 6rem;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .rightBar__item {
+    &__header{
+      .ant-typography{
+        font-size: 1.7rem;
+      }
+    }
+   
+  }
+}

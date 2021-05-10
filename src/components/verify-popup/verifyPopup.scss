@@ -1,0 +1,17 @@
+.verifyPopup__container__modal {
+  .ant-modal-content {
+    .ant-modal-body {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      .verifyPopup__container__modal__content{
+          display: grid;
+          justify-items: center;
+          gap: 2rem;
+          &--title{
+              font-size: 2rem;
+          }
+      }
+    }
+  }
+}

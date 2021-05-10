@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header component 1`] = `
+<div
+  className="header__container"
+>
+  <Logo />
+  <Navbar />
+  <div
+    className="header__container__mobile"
+  >
+    <UserProfile />
+  </div>
+  <UserProfileMobile />
+</div>
+`;

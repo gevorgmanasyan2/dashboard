@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render WaiverItem component 1`] = `
+<div
+  className="waiver__item__container__modal__details"
+>
+  <div>
+    <img
+      alt=""
+      src=""
+      style={
+        Object {
+          "height": "200px",
+          "width": "399px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="waiver__item__container__modal__details__file"
+  >
+    <ForwardRef(FileOutlined) />
+    <span
+      className="waiver__item__container__modal__details__file--name"
+    >
+      zxcv
+    </span>
+  </div>
+  <div
+    className="waiver__item__container__modal__details--desc"
+  >
+    <p>
+      zxcv
+    </p>
+  </div>
+  <div
+    className="waiver__item__container__modal__details__footer"
+  >
+    <div
+      className="waiver__item__container__modal__details__footer--icon"
+    >
+      <Button
+        block={false}
+        ghost={false}
+        href=""
+        htmlType="button"
+        loading={false}
+        target="_blank"
+      >
+        <ForwardRef(BookOutlined) />
+      </Button>
+    </div>
+  </div>
+</div>
+`;

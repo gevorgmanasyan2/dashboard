@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NotFound component 1`] = `
+<div
+  className="not__found__page"
+>
+  <Result
+    extra={
+      <div
+        className="not__found__page__content"
+      >
+        <p
+          className="not__found__page__content__info"
+        >
+          Please  
+          <span>
+            return
+          </span>
+           to the previous page or go to 
+          <Link
+            to="/"
+          >
+            dashboard
+          </Link>
+           page
+        </p>
+      </div>
+    }
+    status="404"
+    subTitle="Sorry, the page you visited does not exist."
+    title="404"
+  />
+</div>
+`;

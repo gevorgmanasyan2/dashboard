@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.main-title {
+  font-size: 2.8rem;
+  color: $primaryGrey !important;
+  font-weight: bold !important;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Logo component 1`] = `
+<div
+  className="logo__container"
+>
+  <Link
+    to="/"
+  >
+    <img
+      alt="logo"
+      className="logo__container__image"
+      src="test-file-stub"
+    />
+    <img
+      alt="logo"
+      className="logo__container__mobile"
+      src="test-file-stub"
+    />
+  </Link>
+</div>
+`;

@@ -1,0 +1,27 @@
+@import '../../../../../../styles/variables.scss';
+
+.uploadedFiles__container {
+  &__content {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 1rem;
+    &__link {
+      color: $secondaryWhite;
+    }
+    &__buttons {
+      width: 10rem;
+      height: 3rem;
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: $primaryGrey;
+      color: $secondaryWhite;
+      border: 0;
+      outline: 0;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}

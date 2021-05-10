@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.development__container {
+  color: $primaryRed;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 99;
+  top: 5rem;
+}

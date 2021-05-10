@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+%textProps {
+  margin: 0;
+  color: $secondaryWhite;
+  padding-top: 1rem;
+}
+
+.footer__container {
+  padding: 1rem 3.5rem;
+  background-color: $primaryLightBlue;
+  &__terms {
+    text-align: end;
+    p {
+      @extend %textProps;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    p {
+      @extend %textProps;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer__container {
+    &__terms {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer__container {
+    &__terms {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &__copyright {
+      p {
+        font-size: 1.2rem;
+        padding: 0;
+      }
+    }
+  }
+}

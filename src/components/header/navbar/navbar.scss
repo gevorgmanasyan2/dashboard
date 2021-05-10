@@ -1,0 +1,93 @@
+@import '../../../styles/variables.scss';
+
+.navbar {
+  width: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5rem;
+
+  &__link {
+    &--item {
+      color: $lightGrey;
+      font-size: 1.8rem;
+      .sendIcon {
+        color: $primaryRed;
+        transform: rotate(-45deg);
+        margin-left: 0.4rem;
+        font-size: 2.1rem;
+      }
+    }
+    &--itemRotate {
+      transition: transform 0.3s ease-out;
+      transform: rotate(0deg);
+    }
+    &--itemBackRotate {
+      transition: transform 0.3s ease-out;
+      transform: rotate(180deg);
+    }
+    .ant-dropdown-trigger {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      .navbar__link--item {
+        color: $lightGrey;
+        font-size: 1.8rem;
+      }
+
+      .anticon.anticon-down,
+      .ant-dropdown-link > .anticon.anticon-down,
+      .ant-dropdown-button > .anticon.anticon-down {
+        color: $lightGrey;
+        font-size: 1.6rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and(max-width:1024px) {
+  .navbar {
+    gap: 2rem;
+    &__link {
+      &--item {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    gap: 2rem;
+    align-items: baseline;
+    &__link {
+      &--item {
+        font-size: 1.5rem;
+      }
+      .ant-dropdown-trigger {
+        .navbar__link--item {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    gap: 1.5rem;
+    &__link {
+      &--item {
+        font-size: 1.2rem;
+        .sendIcon {
+          font-size: 1.2rem;
+        }
+      }
+      .ant-dropdown-trigger {
+        .navbar__link--item {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

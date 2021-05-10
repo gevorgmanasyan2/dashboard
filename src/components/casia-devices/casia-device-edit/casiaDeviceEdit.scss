@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/common.scss';
+
+.casia__device__edit {
+  padding:8.4rem 2.4rem;
+  min-height:calc(100vh - 84px);
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    gap: 10rem;
+    &__items {
+      padding: 1.2rem;
+      border-right: 2px solid $primaryGrey;
+      h3 {
+        font-size: 2.8rem;
+      }
+      ul {
+        list-style-type: none;
+      }
+    }
+    &__form {
+      display: grid;
+      gap: 1rem;
+      padding: 2rem;
+      &--title {
+        h3 {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+  &__buttons {
+    @include actionButtons;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .casia__device__edit {
+    &__list {
+      grid-auto-flow: unset;
+      justify-content: center;
+      &__items {
+        border-right: 0;
+        border-bottom: 2px solid $primaryGrey;
+      }
+    }
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}

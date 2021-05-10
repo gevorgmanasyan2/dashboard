@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+
+.ant-input.input__container {
+  &--input {
+    border: 1px solid $primaryGrey;
+  }
+
+  &--input.error {
+    border: 1px solid $primaryRed;
+  }
+}
+
+.input__container{
+  &--error{
+    color: #ff0000;
+    position: absolute;
+  }
+}
+
+

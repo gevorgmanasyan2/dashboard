@@ -1,0 +1,58 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/common.scss';
+
+.dashboard__addlocation__container {
+  padding: 8.4rem 12rem;
+  min-height:calc(100vh - 84px);
+  margin: 0 auto;
+  &__title {
+    font-size: 2.8rem;
+    color: $primaryGrey;
+    font-weight: bold;
+  }
+  &__content {
+    width: 45rem;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    .input__container {
+      label {
+        color: $primaryGrey;
+        font-weight: 600;
+      }
+    }
+    .textarea__container {
+      label {
+        color: $primaryGrey;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__buttons {
+    @include actionButtons;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard__addlocation__container {
+    padding: 2.4rem 2rem;
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dashboard__addlocation__container {
+    &__content {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .dashboard__addlocation__container {
+    min-height: calc(100vh - 58px);
+  }
+}
+

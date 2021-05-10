@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Notifications component 1`] = `
+<div
+  className="notification__container"
+>
+  <Popup
+    className="notification__container__modal"
+    closeModal={[Function]}
+    footer={null}
+    modalTitle="Notifications"
+    visible={true}
+  >
+    <div
+      className="notification__container__modal__content"
+      onClick={[Function]}
+    >
+      <div
+        className="notification__container__modal__content--icon"
+      >
+        <ForwardRef(SendOutlined) />
+      </div>
+      <div
+        className="notification__container__modal__content--message"
+      >
+        <p
+          className="bold"
+        >
+          You have a new, unconfigured Casia 360 device. Configure it now
+        </p>
+      </div>
+      <div
+        className="notification__container__modal__content--status"
+      />
+    </div>
+    <div
+      className="notification__container__modal__content--date"
+    >
+      One day ago
+    </div>
+    <div
+      className="notification__container__modal__content"
+      onClick={[Function]}
+    >
+      <div
+        className="notification__container__modal__content--icon"
+      >
+        <ForwardRef(RightCircleOutlined) />
+      </div>
+      <div
+        className="notification__container__modal__content--message"
+      >
+        <p
+          className="default"
+        >
+          Your Iris Agent has left you a message: Please upload special image for
+        </p>
+      </div>
+      <div
+        className=""
+      />
+    </div>
+    <div
+      className="notification__container__modal__content--date"
+    >
+      3 days ago
+    </div>
+    <div
+      className="notification__container__modal__content"
+      onClick={[Function]}
+    >
+      <div
+        className="notification__container__modal__content--icon"
+      >
+        <ForwardRef(SendOutlined) />
+      </div>
+      <div
+        className="notification__container__modal__content--message"
+      >
+        <p
+          className="default"
+        >
+          You have a new, unconfigured Casia 360 device. Configure it now
+        </p>
+      </div>
+      <div
+        className=""
+      />
+    </div>
+    <div
+      className="notification__container__modal__content--date"
+    >
+      3 days ago
+    </div>
+    <div
+      className="notification__container__modal__content"
+      onClick={[Function]}
+    >
+      <div
+        className="notification__container__modal__content--icon"
+      >
+        <ForwardRef(RightCircleOutlined) />
+      </div>
+      <div
+        className="notification__container__modal__content--message"
+      >
+        <p
+          className="bold"
+        >
+          Your Iris Agent has left you a message: Please upload special image for
+        </p>
+      </div>
+      <div
+        className="notification__container__modal__content--status"
+      />
+    </div>
+    <div
+      className="notification__container__modal__content--date"
+    >
+      One week ago
+    </div>
+    <div
+      className="notification__container__modal__content"
+      onClick={[Function]}
+    >
+      <div
+        className="notification__container__modal__content--icon"
+      >
+        <ForwardRef(SendOutlined) />
+      </div>
+      <div
+        className="notification__container__modal__content--message"
+      >
+        <p
+          className="default"
+        >
+          You have a new, unconfigured Casia 360 device. Configure it now
+        </p>
+      </div>
+      <div
+        className=""
+      />
+    </div>
+    <div
+      className="notification__container__modal__content--date"
+    >
+      3 weeks ago
+    </div>
+  </Popup>
+  <CasiaDevices
+    cancelText="OK"
+    className=""
+    closeModal={[Function]}
+    okText="Cancel"
+    visible={false}
+  />
+</div>
+`;

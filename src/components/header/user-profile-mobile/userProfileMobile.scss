@@ -1,0 +1,10 @@
+.userProfileMobile__container {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .userProfileMobile__container {
+    display: block;
+  }
+}
+

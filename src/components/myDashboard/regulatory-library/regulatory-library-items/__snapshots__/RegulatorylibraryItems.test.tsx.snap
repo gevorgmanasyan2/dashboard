@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MyDashboard component 1`] = `
+<div
+  className="regulatory__library__items__container"
+>
+  <RegulatoryLibraryItem
+    id={1}
+    key="1"
+    name="test"
+  />
+</div>
+`;

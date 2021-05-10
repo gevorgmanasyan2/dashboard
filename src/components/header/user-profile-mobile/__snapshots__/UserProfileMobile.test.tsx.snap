@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render UserProfileMobile component 1`] = `
+<div
+  className="userProfileMobile__container"
+>
+  <Dropdown
+    mouseEnterDelay={0.15}
+    mouseLeaveDelay={0.1}
+    overlay={
+      <Menu>
+        <MenuItem>
+          <UserProfile />
+        </MenuItem>
+      </Menu>
+    }
+    overlayClassName="userProfileMobile__container__info"
+    placement="bottomCenter"
+    trigger={
+      Array [
+        "click",
+      ]
+    }
+  >
+    <ForwardRef(MenuOutlined) />
+  </Dropdown>
+</div>
+`;

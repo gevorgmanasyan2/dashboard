@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CasiaDeviceConfig component 1`] = `
+<article
+  className="config__container"
+>
+  <section
+    className="config__container__title"
+  >
+    <Title
+      level={2}
+      titleText="Un-configured Casia Devices"
+    />
+    <p
+      onClick={[Function]}
+    >
+      Select the device you want to configure:
+    </p>
+  </section>
+  <section
+    className="config__container__casia"
+  >
+    <section
+      className="config__container__casia__devices"
+      onClick={[Function]}
+    >
+      <div
+        className="config__container__casia__devices__element"
+      >
+        <p
+          className="config__container__casia__devices__element--title"
+        >
+          Casia 360
+        </p>
+        <p
+          className="config__container__casia__devices__element--serial"
+        >
+          Serial #: 
+          H234 12348970123
+        </p>
+      </div>
+      <div
+        className="config__container__casia__devices__image"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
+    </section>
+    <section
+      className="config__container__casia__devices"
+      onClick={[Function]}
+    >
+      <div
+        className="config__container__casia__devices__element"
+      >
+        <p
+          className="config__container__casia__devices__element--title"
+        >
+          Casia Long Range
+        </p>
+        <p
+          className="config__container__casia__devices__element--serial"
+        >
+          Serial #: 
+          H250 12898970123
+        </p>
+      </div>
+      <div
+        className="config__container__casia__devices__image"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+      </div>
+    </section>
+  </section>
+  <section
+    className="config__container__buttons"
+  >
+    <Link
+      to="/"
+    >
+      <ActionButtons
+        buttonText="Back"
+        className="config__container__buttons--cancel"
+      />
+    </Link>
+    <Link
+      to="/casiadevice-form"
+    >
+      <ActionButtons
+        buttonText="Next"
+        buttonType={true}
+        className="config__container__buttons--next"
+        icon={
+          <ForwardRef(RightOutlined)
+            className="right__arrow"
+          />
+        }
+      />
+    </Link>
+  </section>
+</article>
+`;

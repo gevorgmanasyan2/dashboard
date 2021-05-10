@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RightBarItem component 1`] = `
+<div
+  className="rightBar__item"
+>
+  <div
+    className="rightBar__item__header"
+  >
+    <Title
+      level={5}
+      titleText="rightBar"
+    />
+  </div>
+  <div />
+</div>
+`;

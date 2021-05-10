@@ -1,0 +1,32 @@
+@import '../../../../../styles/variables.scss';
+
+.regulatory__library__item__container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  border: 2px solid $lighterGrey;
+  padding: 2.2rem;
+  &:hover {
+    background-color: $primaryGrey;
+    div {
+      span {
+        color: $secondaryWhite;
+      }
+      color: red;
+    }
+  }
+  &--id {
+    span {
+      color: $primaryGrey;
+      font-size: 6.3rem;
+      font-weight: 100;
+    }
+  }
+  &--name {
+    width: 18rem;
+    span {
+      font-size: 1.6rem;
+      color: $lightGrey;
+    }
+  }
+}

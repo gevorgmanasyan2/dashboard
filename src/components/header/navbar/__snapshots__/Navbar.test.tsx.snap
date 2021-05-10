@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Navbar component 1`] = `
+<div
+  className="navbar"
+>
+  <NavLink
+    activeClassName="navbar__link--selected"
+    className="navbar__link"
+    to="/"
+  >
+    <span
+      className="navbar__link--item"
+    >
+      My Dashboard
+    </span>
+  </NavLink>
+  <NavLink
+    activeClassName="navbar__link--selected"
+    className="navbar__link"
+    to="/regulations"
+  >
+    <Dropdown
+      mouseEnterDelay={0.15}
+      mouseLeaveDelay={0.1}
+      overlay={
+        <Menu>
+          <MenuItem>
+            <Link
+              to="/regulatory-permissions"
+            >
+              Regulatory Permissions
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              to="/regulatory-library"
+            >
+              Resource Library
+            </Link>
+          </MenuItem>
+        </Menu>
+      }
+      trigger={
+        Array [
+          "click",
+        ]
+      }
+    >
+      <span
+        className="ant-dropdown-link"
+        onClick={[Function]}
+      >
+        <span
+          className="navbar__link--item"
+        >
+          Regulations
+        </span>
+        <ForwardRef(DownOutlined)
+          className="navbar__link--itemRotate"
+          onClick={[Function]}
+        />
+      </span>
+    </Dropdown>
+  </NavLink>
+</div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ShareableInput component 1`] = `
+<div
+  className="input__container"
+>
+  <label
+    htmlFor=""
+  >
+    Serial
+  </label>
+  <Input
+    className="input__container--input text"
+    name="test"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Name"
+    type="text"
+    value="test"
+  />
+  <div
+    className="input__container--error"
+  >
+    error
+  </div>
+</div>
+`;

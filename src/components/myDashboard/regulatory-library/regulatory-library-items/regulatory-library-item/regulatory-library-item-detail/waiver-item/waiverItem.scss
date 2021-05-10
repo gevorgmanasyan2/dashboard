@@ -1,0 +1,52 @@
+@import '../../../../../../../styles/variables.scss';
+
+.waiver__item__container__modal {
+  width: 100% !important;
+  .ant-modal-content {
+    .ant-modal-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+      justify-items: center;
+      row-gap: 3rem;
+    }
+  }
+  &__details {
+    border: 1px solid $lighterGrey;
+    max-width: 40rem;
+    &__file {
+      padding: 1.2rem 1.5rem;
+      height: 8rem;
+      .anticon {
+        color: $primaryRed;
+        font-size: 2rem;
+      }
+      &--name {
+        color: $primaryRed;
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+      }
+    }
+    &--desc{
+      padding: 1.5rem;
+      min-height: 18rem;
+      p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        word-break: break-word;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+    }
+    &__footer {
+      border-top: 1px solid $lighterGrey;
+      &--icon {
+        font-size: 2rem;
+        display: grid;
+        justify-content: flex-end;
+        padding: 1rem;
+      }
+    }
+  }
+}

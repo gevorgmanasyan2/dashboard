@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RegulatoryLibraryItemDetailPopup component 1`] = `
+<Popup
+  className="waiver__item__container__modal"
+  closeModal={[Function]}
+  footer={null}
+  modalTitle="Resource Library Details"
+  visible={true}
+>
+  <WaiverItem
+    key="1"
+    name="test"
+  />
+</Popup>
+`;

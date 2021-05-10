@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MyDashboard component 1`] = `
+<div
+  className="regulatory__library__container"
+>
+  <div
+    className="regulatory__library__container__title"
+  >
+    <h2>
+      Regulatory Resource Library
+    </h2>
+  </div>
+  <Tabs
+    activeKey="1"
+    className="regulatory__library__container__tab"
+    onChange={[Function]}
+  >
+    <TabPane
+      key="1"
+      tab={
+        <img
+          alt="us-flag"
+          src="test-file-stub"
+        />
+      }
+    >
+      <RegulatoryLibraryItems />
+    </TabPane>
+    <TabPane
+      key="2"
+      tab={
+        <img
+          alt="ca-icon"
+          src="test-file-stub"
+        />
+      }
+    >
+      <RegulatoryLibraryItems />
+    </TabPane>
+    <TabPane
+      key="3"
+      tab={
+        <img
+          alt="ww-icon"
+          src="test-file-stub"
+        />
+      }
+    >
+      <RegulatoryLibraryItems />
+    </TabPane>
+  </Tabs>
+</div>
+`;

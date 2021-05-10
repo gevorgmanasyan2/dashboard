@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Footer component 1`] = `
+<div
+  className="footer__container"
+>
+  <div
+    className="footer__container__terms"
+  >
+    <p>
+      Terms of Service
+    </p>
+  </div>
+  <div
+    className="footer__container__copyright"
+  >
+    <p>
+      Copyright Iris Automation, 2020, All rights reserved
+    </p>
+  </div>
+</div>
+`;

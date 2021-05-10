@@ -1,0 +1,52 @@
+@import "../../../../styles/variables";
+
+.searchRegulatory__content {
+  padding: 8.4rem 12rem;
+  min-height: calc(100vh - 84px);
+  margin: 0 auto;
+
+  &__header {
+
+    display: flex;
+    justify-content: space-between;
+
+    &--title {
+      font-size: 2.8rem;
+      color: $primaryGrey;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    &--icon {
+      font-size: 5.5rem;
+      color: $primaryGrey;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      &:hover{
+        background-color: $primaryGrey;
+        color: $secondaryWhite;
+
+      }
+    }
+  }
+  &--searchInput{
+    max-width: 50rem;
+    margin: 5rem 0;
+  }
+  &--pagination{
+    margin: 5rem 0;
+  }
+  &--regulatory{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .searchRegulatory__content {
+    padding: 8.4rem 2rem;
+    &--regulatory{
+      width: 100%;
+    }
+  }
+}

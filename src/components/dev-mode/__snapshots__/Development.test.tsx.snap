@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Development component 1`] = `
+<div
+  className="development__container"
+>
+  <ForwardRef(WarningFilled) />
+  <span>
+    test
+  </span>
+  <ForwardRef(WarningFilled) />
+</div>
+`;

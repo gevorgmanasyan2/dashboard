@@ -1,0 +1,70 @@
+@import '../../../styles/variables.scss';
+
+%casiadevicesProps {
+  font-size: 2rem;
+  color: $primaryGrey;
+}
+%casiadevicesPropsMobile {
+  font-size: 1.7rem;
+}
+
+.casiadevices__container {
+  &__modal {
+    width: 85rem !important;
+    text-align: center;
+    &--info {
+      @extend %casiadevicesProps;
+      width: 50rem;
+    }
+    &--offer {
+      @extend %casiadevicesProps;
+      width: 35rem;
+    }
+
+    .ant-modal-content {
+      .ant-modal-body {
+        display: grid;
+        justify-items: center;
+      }
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-weight: 700;
+          font-size: 2.8rem;
+        }
+      }
+      .ant-modal-footer {
+        .ant-btn {
+          width: 18rem;
+          height: 6rem;
+          border-radius: 5px;
+          font-size: 2rem;
+        }
+        .ant-btn-primary {
+          background: $primaryLightBlue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .casiadevices__container {
+    &__modal {
+      top: 8rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      &--info {
+        width: 40rem;
+      }
+      .ant-modal-content {
+        .ant-modal-footer {
+          .ant-btn {
+            font-size: 1.9rem;
+          }
+        }
+      }
+    }
+  }
+}

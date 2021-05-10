@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SearchRegulatoryApprovalContainer component 1`] = `
+<article
+  className="searchRegulatory__content"
+>
+  <header
+    className="searchRegulatory__content__header"
+  >
+    <Title
+      titleText="Regulatory Permission"
+    >
+       
+    </Title>
+    <div
+      className="searchRegulatory__content__header--icon"
+    >
+      <ForwardRef(PlusOutlined) />
+    </div>
+  </header>
+  <div
+    className="searchRegulatory__content--searchInput"
+  >
+    <ShareableInput
+      placeholder="Search"
+    />
+  </div>
+  <div
+    className="searchRegulatory__content--regulatory"
+  >
+    <Connect(Regulatory) />
+  </div>
+  <div
+    className="searchRegulatory__content--pagination"
+  >
+    <Pagination
+      defaultCurrent={1}
+      total={50}
+    />
+  </div>
+</article>
+`;

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MyDashboard component 1`] = `
+<Fragment>
+  <div
+    className="regulatory__library__item__container"
+    onClick={[Function]}
+  >
+    <div
+      className="regulatory__library__item__container--id"
+    >
+      <span>
+        0
+        1
+      </span>
+    </div>
+    <div
+      className="regulatory__library__item__container--name"
+    >
+      <span>
+        test
+      </span>
+    </div>
+  </div>
+  <RegulatoryLibraryItemDetailPopup
+    closeDetailModal={[Function]}
+    visible={false}
+    waiverLibraryItems={
+      Array [
+        Object {
+          "id": 1,
+          "name": "test",
+          "waiverLibraryItems": Array [],
+        },
+      ]
+    }
+  />
+</Fragment>
+`;

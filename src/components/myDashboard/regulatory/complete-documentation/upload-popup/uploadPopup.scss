@@ -1,0 +1,120 @@
+@import '../../../../../styles/variables';
+
+.uploadPopup__container__modal {
+  width: 100% !important;
+  top: 8rem !important;
+  .ant-modal-content {
+    padding: 3rem 6rem;
+    top: -7rem
+  }
+
+  &__content {
+    display: grid;
+    grid-auto-flow: column;
+    &__info {
+      padding: 4rem 0;
+      p {
+        font-size: 1.6rem;
+        color: $lightGrey;
+      }
+    }
+    &__upload {
+      display: grid;
+      justify-content: center;
+      padding: 4rem 0;
+      background-color: $lighterGrey;
+      border: 2px dashed $lightGrey;
+      gap: 1rem;
+
+      &--button {
+        display: block;
+        margin: auto;
+        .ant-upload {
+          padding: 0 !important;
+          display: block !important;
+          position: unset !important;
+        }
+      }
+
+      .config__container__buttons--next {
+        width: auto;
+      }
+      .anticon {
+        color: $lightGrey;
+        font-size: 5rem;
+      }
+      p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $lightGrey;
+      }
+    }
+  }
+  &__buttons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 2rem;
+    margin-top: 25rem;
+    &__block {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2rem;
+    }
+    &__content {
+      display: grid;
+      align-items: center;
+      &--text {
+        font-size: 1.5rem;
+        color: $lightGrey;
+        cursor: pointer;
+        &:hover {
+          color: $primaryLighterBlue;
+        }
+      }
+    }
+  }
+}
+
+.ant-upload.ant-upload-drag {
+  height: unset !important;
+}
+.ant-upload.ant-upload-drag .ant-upload-drag-container {
+  display: block !important;
+}
+
+@media screen and (max-width: 900px) {
+  .uploadPopup__container__modal {
+    &__content {
+      grid-auto-flow: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and(max-width: 600px) {
+  .uploadPopup__container__modal {
+    .ant-modal-content {
+      padding: 2rem 0.5rem;
+    }
+    &__content {
+      &__info {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .ant-modal-body {
+      padding: 2rem 1.2rem;
+      .main-title {
+        font-size: 1.5rem;
+      }
+    }
+    &__buttons {
+      grid-auto-flow: unset;
+      justify-content: center;
+      &__content {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+@import '../../../styles/variables.scss';
+
+.userProfile__container {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1.5rem;
+
+  .ant-dropdown-link {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    cursor: pointer;
+    &--name {
+      color: $primaryGrey;
+      font-size: 1.7rem;
+    }
+    &--itemRotate {
+      transition: transform 0.5s ease-out;
+      transform: rotate(0deg);
+    }
+    &--itemBackRotate,
+    .anticon .anticon-down {
+      transition: transform 0.3s ease-out;
+      transform: rotate(180deg);
+    }
+  }
+
+  .anticon.anticon-down,
+  .ant-dropdown-link > .anticon.anticon-down,
+  .ant-dropdown-button > .anticon.anticon-down {
+    color: $lightGrey;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+  }
+
+  .ant-badge {
+    position: absolute;
+    top: -0.6rem;
+    left: 3.6rem;
+    .ant-badge-count,
+    .ant-badge-count-sm {
+      font-size: 1.1rem;
+    }
+
+    .ant-scroll-number {
+      position: inherit;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      padding: 0.3rem;
+    }
+  }
+  &__icons {
+    position: relative;
+    .anticon {
+      border: 2px solid $primaryGrey;
+      border-radius: 50%;
+      padding: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $primaryGrey;
+        color: $secondaryWhite;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and(max-width: 1024px) {
+  .userProfile__container {
+    .ant-badge {
+      .ant-badge-count,
+      .ant-badge-count-sm {
+        font-size: 1.4rem;
+      }
+      .ant-scroll-number {
+        padding: 0.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and(max-width: 1440px) {
+  .userProfile__container {
+    .ant-badge {
+      .ant-badge-count,
+      .ant-badge-count-sm {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .userProfile__container {
+    grid-auto-flow: row;
+    row-gap: 1.5rem;
+    justify-items: center;
+    padding: 1rem 0;
+    .ant-badge {
+      .ant-badge-count,
+      .ant-badge-count-sm {
+        font-size: 1.4rem;
+      }
+      .ant-scroll-number {
+        padding: 0.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .userProfile__container {
+    &__info {
+      top: 60px !important;
+      left: 83% !important;
+      margin-right: 1vw !important;
+      min-width: unset !important;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  .userProfile__container {
+    &__info {
+      top: 60px !important;
+      left: 79% !important;
+      min-width: unset !important;
+      ul {
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .userProfile__container {
+    &__info {
+      top: 60px !important;
+      left: 72% !important;
+      min-width: unset !important;
+      ul {
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

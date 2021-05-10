@@ -1,0 +1,23 @@
+@import '../../../../styles/variables.scss';
+
+.regList__container {
+  padding: 8.4rem 12rem;
+  margin: 0 auto;
+  min-height: calc(100vh - 84px);
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    &--icon {
+        font-size: 5.5rem;
+        color: $primaryGrey;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        &:hover{
+          background-color: $primaryGrey;
+          color: $secondaryWhite;
+  
+        }
+      }
+  }
+}

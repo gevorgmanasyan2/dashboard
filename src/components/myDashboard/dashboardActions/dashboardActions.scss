@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+
+%dashboardActionsProps {
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  border: 2px solid $primaryBorderColor;
+  cursor: pointer;
+}
+
+.dashboardActions__container {
+  &--selected {
+    background-color: $primaryGrey;
+    color: $secondaryWhite;
+    @extend %dashboardActionsProps;
+  }
+  color: $primaryGrey;
+  @extend %dashboardActionsProps;
+ 
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    &--icon {
+      font-size: 2.4rem;
+    }
+    &--title {
+      font-size: 2.4rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+   
+ 
+    &__element {
+      display: grid;
+      text-align: center;
+      min-width: 12rem;
+      &:hover {
+        background-color: $primaryGrey;
+        color: $secondaryWhite;
+        border: 0;
+      }
+      &--count {
+        font-size: 6.3rem;
+        font-weight: bold;
+        display: inline-block;
+        a {
+          color: inherit;
+          transition: none;
+          &:hover{
+            color:$secondaryWhite
+          }
+        }
+      }
+      &--title {
+        display: inline-block;
+      }
+    }
+    &__icon {
+      font-size: 6.3rem;
+      text-align: center;
+      min-width: 12rem;
+      border-left: 3px solid $lighterGrey;
+      &:hover {
+        background-color: $primaryGrey;
+        color: $secondaryWhite;
+        border: 0;
+      }
+
+      a {
+        color: inherit;
+        transition: none;
+        &:hover{
+          color:$secondaryWhite
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: grid;
+    justify-content: center;
+    color: $primaryRed;
+  }
+}

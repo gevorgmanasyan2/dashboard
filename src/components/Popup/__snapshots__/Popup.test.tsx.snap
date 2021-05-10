@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Popup component 1`] = `
+<Modal
+  cancelText="cancel"
+  centered={false}
+  className="modal"
+  confirmLoading={false}
+  footer={null}
+  maskTransitionName="fade"
+  okText="save"
+  okType="primary"
+  onCancel={[Function]}
+  title="title"
+  transitionName="zoom"
+  visible={false}
+  width={520}
+>
+  <div />
+</Modal>
+`;

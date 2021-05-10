@@ -1,0 +1,216 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/common.scss';
+
+.ant-spin-spinning{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+}
+
+.complete__container {
+  padding: 8.4rem 10rem;
+  min-height: calc(100vh - 84px);
+  margin: 0 auto;
+
+
+  .ant-typography {
+    margin: 2rem 0;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 3rem 0;
+
+    &__content {
+      padding: 0 2rem 0 0;
+      &--questionnaires {
+        display: grid;
+        padding: 1rem 0;
+        gap: 1rem;
+      }
+
+      .ant-btn {
+        background: $primaryLightBlue;
+        padding: 2rem 5rem;
+        color: white;
+        font-size: 3rem;
+        height: max-content;
+        border-radius: 1rem;
+        margin: 3rem 0 1.5rem;
+        width: 41vw;
+      }
+
+      > p {
+        font-size: 2.5rem;
+        color: $primaryGrey;
+      }
+    }
+  }
+
+  &__doc__header {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    .doc__container {
+      display: grid;
+      align-items: center;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      cursor: pointer;
+
+      &__date {
+        color: white;
+        padding: 0.3rem 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+      }
+
+      &__content {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        span {
+          margin-left: 0.5rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+
+    &__content {
+      display: grid;
+      grid-auto-flow: column;
+      position: absolute;
+      align-items: center;
+      position: relative;
+      &--icon {
+        .anticon {
+          font-size: 3.6rem;
+        }
+        .ant-badge {
+          left: -2rem;
+          top: -3.2rem;
+        }
+      }
+      &__right {
+        margin-left: 2rem;
+        &--percent {
+          font-size: 2.8rem;
+        }
+        &--status {
+          font-size: 2rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.chatPopup {
+  width: 32rem !important;
+  top: 53% !important;
+  margin-right: 1vw !important;
+  transform-origin: unset !important;
+
+  .ant-modal-content {
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.6rem #ccc;
+  }
+  .ant-modal-body {
+    overflow-y: scroll;
+    height: 29rem;
+  }
+
+  .ant-modal-header {
+    box-shadow: 0 8px 5px -5px #ccc;
+  }
+
+  .ant-modal-footer {
+    display: grid;
+    align-items: center;
+    .chatPopup__input__container {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      textarea {
+        resize: none;
+        width: 25rem;
+        background: $lighterGrey;
+        border-radius: 2rem;
+      }
+      .anticon {
+        font-size: 3rem;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .complete__container {
+    &__doc__header {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .complete__container {
+    padding: 8.4rem 6rem;
+    &__header {
+      grid-auto-flow: unset;
+      .main-title {
+        font-size: 2.8rem;
+      }
+    }
+    &__main {
+      grid-template-columns: unset;
+      &__content {
+        padding-top: 3rem;
+        .ant-badge {
+          top: 2.4rem;
+        }
+        .ant-btn {
+          width: unset;
+          font-size: 2.2rem;
+        }
+        .ant-typography {
+          font-size: 2.2rem;
+        }
+        p {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .complete__container {
+    padding: 8.4rem 2rem;
+    .ant-typography {
+      font-size: 1.8rem;
+    }
+    &__main {
+      display: unset;
+      &__content {
+        .ant-btn {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

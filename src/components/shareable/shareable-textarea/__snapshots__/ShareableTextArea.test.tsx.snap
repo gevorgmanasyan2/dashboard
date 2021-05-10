@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ShareableSelect component 1`] = `
+<div
+  className="textarea__container"
+>
+  <label
+    htmlFor=""
+  >
+    Description
+  </label>
+  <TextArea
+    className="textarea__container--textarea text"
+    name="test"
+    onBlur={[Function]}
+    onChange={[Function]}
+    rows={4}
+    value="test"
+  />
+  <div
+    className="textarea__container--error"
+  >
+    error
+  </div>
+</div>
+`;

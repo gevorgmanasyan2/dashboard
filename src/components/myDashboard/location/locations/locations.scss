@@ -1,0 +1,55 @@
+@import '../../../../styles/variables.scss';
+
+.dashboard__location__container {
+  padding: 8.4rem 12rem;
+  min-height:calc(100vh - 84px);
+  &__header {
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    &--icon {
+      font-size: 5.5rem;
+      color: $primaryGrey;
+      display: grid;
+      place-content: center;
+      a {
+        color:$primaryGrey;
+        span {
+          &:hover {
+            background-color: $primaryGrey;
+            color: $secondaryWhite;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    width: 55rem;
+    margin: 0 auto;
+    .ant-table-wrapper {
+      margin-top: 3rem;
+    }
+
+    .ant-table-thead{
+      th{
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard__location__container {
+    padding: 2.4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard__location__container {
+    &__content {
+      width: auto;
+    }
+  }
+}

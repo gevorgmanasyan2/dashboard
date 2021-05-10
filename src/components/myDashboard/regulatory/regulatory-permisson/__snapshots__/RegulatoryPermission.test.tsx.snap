@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RegulatoryPermissionList component 1`] = `
+<div
+  className="regList__container"
+>
+  <header
+    className="regList__container__header"
+  >
+    <Title
+      titleText="Regulatory Permissions"
+    />
+    <div
+      className="regList__container__header--icon"
+    >
+      <ForwardRef(PlusOutlined) />
+    </div>
+  </header>
+  <Space
+    style={
+      Object {
+        "marginBottom": 16,
+      }
+    }
+  >
+    <ShareableSelect
+      value="All Sources"
+    />
+    <ShareableSelect
+      value="All Assigned Agents"
+    />
+    <ShareableSelect
+      value="All Waiver Types"
+    />
+    <ShareableSelect
+      value="Active"
+    />
+  </Space>
+  <Connect(Regulatory) />
+</div>
+`;

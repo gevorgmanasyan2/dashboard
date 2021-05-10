@@ -1,0 +1,21 @@
+@import '../../../../../styles/variables.scss';
+
+.uploadPopup__container__modal{
+
+        .ant-modal-content{
+            .ant-modal-body{
+                .config__container__buttons--return{
+                    width: auto;
+                    height: 45px;
+                    background-color: $primaryLightBlue;
+                    border-radius: 5px;
+                    color: $secondaryWhite;
+                    &:hover {
+                        background-color: $secondaryWhite;
+                        color: $primaryLighterBlue;
+                        border: 1px solid $primaryLighterBlue;
+                      }
+                }
+            }
+        }
+    } 

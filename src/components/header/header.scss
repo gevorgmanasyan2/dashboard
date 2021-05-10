@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  align-items: center;
+  padding: 1.2rem;
+  border-bottom: 2px solid $primaryBorderColor;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+  background-color: $secondaryWhite;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header__container {
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  .header__container__mobile {
+    display: none;
+  }
+}

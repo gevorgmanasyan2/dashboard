@@ -1,0 +1,32 @@
+.submit__waiver__container {
+  width: 100%;
+  display: grid;
+
+  &__info {
+    width: 96%;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+
+    .config__container__buttons--next {
+      padding: 1rem 2rem;
+      width: max-content;
+      font-size: 1.7rem;
+    }
+  }
+
+  .table__icons {
+    button {
+      background: gray;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+    }
+  }
+
+}

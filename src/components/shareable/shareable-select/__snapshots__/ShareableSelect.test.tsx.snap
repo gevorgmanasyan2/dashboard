@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ShareableSelect component 1`] = `
+<div
+  className="shareableSelect__container"
+>
+  <label
+    htmlFor=""
+  >
+    Status
+  </label>
+  <Select
+    bordered={true}
+    choiceTransitionName=""
+    className="shareableSelect__container--select"
+    transitionName="slide-up"
+  />
+</div>
+`;

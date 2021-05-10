@@ -1,0 +1,57 @@
+@import '../../../styles/variables.scss';
+
+.regulatory__items {
+  &__container {
+    display: grid;
+    grid-auto-flow: column;
+    a{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: red;
+      }
+    }
+    &--title {
+      font-size: 1.7rem;
+      width: 50rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      &:hover{
+        color: $primaryRed;  
+      }
+    }
+    &--icon .warning-icon {
+      color: $primaryRed;
+    }
+  }
+
+}
+
+@media screen and (max-width: 799px) {
+  html {
+    font-size: 40%;
+  }
+  .regulatory__items {
+    &__container {
+      &--title {
+        width: 28rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 40%;
+  }
+  .regulatory__items {
+    &__container {
+      &--title {
+        width: 17rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

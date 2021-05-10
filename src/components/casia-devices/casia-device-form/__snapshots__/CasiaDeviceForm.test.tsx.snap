@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CasiaDeviceForm component 1`] = `
+<article
+  className="casia__device__form"
+>
+  <section
+    className="casia__device__form__title"
+  >
+    <h3>
+      Un-configured Casia Devices
+    </h3>
+  </section>
+  <section
+    className="casia__device__form__content"
+  >
+    <div
+      className="casia__device__form__content__elements"
+    >
+      <ShareableInput
+        label="Give your Casia 360 a nickname"
+      />
+      <ShareableTextarea
+        label="Enter a description"
+      />
+      <ShareableInput
+        label="Registration #"
+      />
+      <ShareableSelect
+        label="Which Drone will your Casia 360 be installed on?"
+      />
+    </div>
+    <div
+      className="casia__device__form__items"
+    >
+      <div
+        className="casia__device__form__items__header"
+      >
+        <p
+          className="casia__device__form__items__header--title"
+        >
+          Casia 360
+        </p>
+      </div>
+      <div
+        className="casia__device__form__items__image"
+      >
+        <img
+          alt=""
+          src="test-file-stub"
+        />
+        <p
+          className="casia__device__form__items__header--serial"
+        >
+          Serial #: ASD 54220358
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="casia__device__form__buttons"
+  >
+    <ActionButtons
+      buttonText="Save and Finish Later"
+      className="config__container__buttons--cancel"
+    />
+    <Link
+      to="/casiadevice-edit"
+    >
+      <ActionButtons
+        buttonText="Next"
+        className="config__container__buttons--next"
+        icon={
+          <ForwardRef(RightOutlined)
+            className="right__arrow"
+          />
+        }
+      />
+    </Link>
+  </section>
+</article>
+`;

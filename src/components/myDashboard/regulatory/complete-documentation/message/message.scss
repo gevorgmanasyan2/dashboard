@@ -1,0 +1,23 @@
+.message__container {
+  padding: 8.4rem 12rem;
+  min-height: calc(100vh - 84px);
+}
+
+@media screen and (max-width: 700px) {
+  .message__container {
+    padding: 8.4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 320px)and (max-width:375px) {
+  .message__container {
+    padding: 8.4rem 1rem;
+    min-height: calc(100vh - 58px);
+  }
+}
+
+@media screen and (min-width:376px)and(max-width: 425px) {
+  .message__container {
+    min-height: calc(100vh - 79px);
+  }
+}

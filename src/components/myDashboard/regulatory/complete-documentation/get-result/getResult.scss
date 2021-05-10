@@ -1,0 +1,37 @@
+.get__result__container {
+  width: 100%;
+  display: grid;
+  justify-items: end;
+  &__info {
+    width: 96%;
+    &__application__title{
+      width: max-content !important;
+      margin: 10rem auto 2rem !important;
+    }
+  }
+
+
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 3rem;
+      .ant-btn {
+        padding: 1rem 2rem;
+        width: max-content;
+        font-size: 1.7rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    .ant-btn {
+      padding: 1rem 2rem;
+      width: max-content;
+      font-size: 1.7rem;
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ActionButtons component 1`] = `
+<Button
+  block={false}
+  className="cancel"
+  disabled={true}
+  ghost={false}
+  htmlType="button"
+  loading={false}
+>
+  save
+</Button>
+`;

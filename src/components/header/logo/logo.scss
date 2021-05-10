@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.logo__container {
+  width: max-content;
+  &__image {
+    width: 32rem;
+    cursor: pointer;
+  }
+  &__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo__container {
+    &__image {
+      width: 26rem;
+      height: 3.5rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo__container {
+    &__image {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+  }
+}

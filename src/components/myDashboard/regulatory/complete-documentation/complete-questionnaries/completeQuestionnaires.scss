@@ -1,0 +1,65 @@
+@import '../../../../../styles/variables';
+
+.complete__questionnaires {
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    &--title {
+      width: 38vw;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    &__icons {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 1rem;
+      align-items: center;
+      &--status {
+        background: #ffc107;
+        // color: #52c41a;
+        // background: #f6ffed;
+        // border-color: #b7eb8f;
+        padding: 0 0.3rem;
+        height: max-content;
+        border-radius: 0.6rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+      }
+      &--statusCompleted {
+        background: #26a744;
+        color: $secondaryWhite;
+        padding: 0.1rem 0.4rem;
+        height: max-content;
+        border-radius: 0.6rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+      }
+
+      > div {
+        background: gray;
+        padding: 0.4rem 0.6rem;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        &:nth-child(3) {
+          background: dodgerblue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .complete__questionnaires {
+    &__content {
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.regulatory__library__items__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    gap: 2rem;
+    padding: 0 6rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    .regulatory__library__items__container{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        padding: 0;
+  }
+}
